@@ -1,0 +1,14 @@
+<div>
+    <ul nz-menu nzMode="horizontal">
+        <li nz-menu-item (click)="setActive('home')" [ngClass]="{'active': activeItem === 'home'}">Home</li>
+        <li nz-menu-item (click)="setActive('celulares')" [ngClass]="{'active': activeItem === 'celulares'}">Celulares
+        </li>
+        <li nz-menu-item (click)="setActive('motocicletas')" [ngClass]="{'active': activeItem === 'motocicletas'}">
+            Motocicletas</li>
+        <li nz-menu-item (click)="setActive('prestamos')" [ngClass]="{'active': activeItem === 'prestamos'}">Tus
+            Préstamos</li>
+        <li nz-menu-item (click)="setActive('tiendas')" [ngClass]="{'active': activeItem === 'tiendas'}">Tiendas</li>
+        <li nz-menu-item (click)="setActive('tracking')" [ngClass]="{'active': activeItem === 'tracking'}">Tracking</li>
+        <li nz-menu-item (click)="setActive('club')" [ngClass]="{'active': activeItem === 'club'}">Club MacroPay</li>
+    </ul>
+</div>

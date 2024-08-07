@@ -1,0 +1,22 @@
+ul[nz-menu] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    li[nz-menu-item] {
+       // margin-left: 120px;
+
+        font-size: 14px;
+        margin: 0 15px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &.active {
+            color: blue;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<div class="product-grid">
+    <div class="product-card" *ngFor="let producto of productos">
+        <div class="product-image">
+            <img [src]="producto.imagen" alt="{{producto.nombre}}" (click)="abrirDetalleProducto(producto)" />
+            <span class="favorite-icon" [class.favorited]="esFavorito(producto)"
+                (click)="toggleFavorite(producto, $event)">&#x2764;</span>
+        </div>
+        <div class="product-info">
+            <div class="info-top">
+                <h3 (click)="abrirDetalleProducto(producto)">{{producto.nombre}}</h3>
+                <div class="rating">
+                    <span *ngFor="let star of [1, 2, 3, 4, 5]"
+                        [class.filled]="star <= producto.calificacion">&#9733;</span>
+                </div>
+            </div>
+            <div class="info-bottom">
+                <p class="price">{{producto.precio | currency}}</p>
+                <button nz-button nzType="default" (click)="abrirModalDetalle(producto)">Lo Quiero!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nz-modal [(nzVisible)]="modalVisible" nzTitle="Detalles del Producto" (nzOnCancel)="handleCancel()"
+    (nzOnOk)="handleOk()">
+    <ng-container *nzModalContent>
+        <div class="modal-content">
+            <img [src]="productoSeleccionado.imagen" alt="{{productoSeleccionado.nombre}}" class="modal-image" />
+            <h3>{{productoSeleccionado.nombre}}</h3>
+            <p>Precio : ${{productoSeleccionado.precio}}</p>
+            <p>Calificación: {{productoSeleccionado.calificacion}}</p>
+            <p>Descripción: {{productoSeleccionado.descripcion}}</p>
+        </div>
+    </ng-container>
+</nz-modal>

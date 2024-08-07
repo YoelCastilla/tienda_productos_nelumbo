@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "nombre": "Apple"
+    },
+    {
+        "id": 2,
+        "nombre": "Samsung"
+    },
+    {
+        "id": 3,
+        "nombre": "Google"
+    },
+    {
+        "id": 4,
+        "nombre": "OnePlus"
+    },
+    {
+        "id": 5,
+        "nombre": "Xiaomi"
+    },
+    {
+        "id": 6,
+        "nombre": "Sony"
+    },
+    {
+        "id": 7,
+        "nombre": "Dell"
+    },
+    {
+        "id": 8,
+        "nombre": "HP"
+    },
+    {
+        "id": 9,
+        "nombre": "Asus"
+    },
+    {
+        "id": 10,
+        "nombre": "Lenovo"
+    },
+    {
+        "id": 11,
+        "nombre": "Acer"
+    },
+    {
+        "id": 12,
+        "nombre": "Microsoft"
+    },
+    {
+        "id": 13,
+        "nombre": "Huawei"
+    },
+    {
+        "id": 14,
+        "nombre": "Bose"
+    },
+    {
+        "id": 15,
+        "nombre": "Jabra"
+    },
+    {
+        "id": 16,
+        "nombre": "Sennheiser"
+    },
+    {
+        "id": 17,
+        "nombre": "Beats"
+    }
+]
